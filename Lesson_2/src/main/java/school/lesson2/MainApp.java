@@ -24,9 +24,18 @@ public class MainApp {
         System.out.println(yearVisocos(300));
         //10
         int[] array ={1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
-        System.out.println(Arrays.toString(arrayInsert(array)));
-
-
+        System.out.println(Arrays.toString(arrayInverse(array)));
+        //11
+        int[] arrayOneHundred = new int[100];
+        System.out.println(Arrays.toString(array100(arrayOneHundred)));
+        //12
+        int[] arrayTwelve = { 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 };
+        System.out.println(Arrays.toString(arrayTwelveMethod(arrayTwelve)));
+        //13
+        int[][] arraySquare = new int[8][8];
+        System.out.println(Arrays.deepToString(arraySquareMethod(arraySquare)));
+        //14
+        System.out.println(Arrays.toString(initialValueMethod(5, 1)));
     }
     public static void printThreeWords()
     {
@@ -88,7 +97,7 @@ public class MainApp {
 
         return false;
     }
-    public static int[] arrayInsert (int[] array){
+    public static int[] arrayInverse(int[] array){
         for (int i=0; i<array.length; i++)
         {
             if (array[i]==1)
@@ -97,5 +106,35 @@ public class MainApp {
         }
         return array;
     }
+    public static int[] array100(int[] array){
+        for (int i=0; i<100; i++)
+        {
+             array[i]=i+1;
+        }
+        return array;
+    }
+    public static int[] arrayTwelveMethod(int[] array){
+        for (int i=0; i<array.length; i++)
+        {   if (array[i]<6)
+            array[i]=array[i]*2;
+        }
+        return array;
+    }
+    public static int[][] arraySquareMethod(int[][] array){
+        for (int i=0; i<array.length; i++)
+            for (int j=0; j<array.length; j++)        {
+                if (i==j) {
+                    array[i][j] = 1;
+                    array[i][(array.length-1)-i]=1;
+                }
+        }
+        return array;
+    }
+    public static int[] initialValueMethod(int len, int initialValue ){
+        int[] array = new int[len];
+        Arrays.fill(array, initialValue);
+        return array;
+    }
 }
+
 
