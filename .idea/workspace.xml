@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3754adfe-cbf0-408a-aadb-ebfb92d4e9e6" name="Changes" comment="lesson2 final">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson_2/src/main/java/school/lesson2/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson_2/src/main/java/MainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson_2/target/classes/school/lesson2/MainApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-    </list>
+    <list default="true" id="3754adfe-cbf0-408a-aadb-ebfb92d4e9e6" name="Changes" comment="lesson2 исправления" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -119,12 +112,29 @@
       <option name="project" value="LOCAL" />
       <updated>1712318324143</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="lesson2 исправления">
+      <option name="closed" value="true" />
+      <created>1712576053552</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712576053552</updated>
+    </task>
+    <task id="LOCAL-00006" summary="lesson2 исправления">
+      <option name="closed" value="true" />
+      <created>1712576264342</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712576264342</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="lesson2" />
     <MESSAGE value="lesson2 final" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson2 final" />
+    <MESSAGE value="lesson2 исправления" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson2 исправления" />
   </component>
 </project>
