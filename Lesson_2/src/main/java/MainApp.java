@@ -1,5 +1,3 @@
-package school.lesson2;
-
 import java.util.Arrays;
 
 public class MainApp {
@@ -21,7 +19,7 @@ public class MainApp {
         //8
         countString("count", 3);
         //9
-        System.out.println(yearVisocos(300));
+        System.out.println("Високосный " + yearVisocos(404));
         //10
         int[] array ={1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
         System.out.println(Arrays.toString(arrayInverse(array)));
@@ -37,66 +35,87 @@ public class MainApp {
         //14
         System.out.println(Arrays.toString(initialValueMethod(5, 1)));
     }
+
     public static void printThreeWords()
     {
         System.out.println("Orange");
         System.out.println("Banana");
         System.out.println("Apple");
     }
+
     public static void checkSumSign()
     {
         int a = 3;
         int b = -4;
         if ((a+b)>=0)
+        {
             System.out.println("Сумма положительная");
+        }
         else
+        {
             System.out.println("Сумма отрицательная");
+        }
     }
 
     public static void printColor()
     {
-        int value = 300;
-        if (value<=0)
+        int value = -1200;
+        if (value<=0) {
             System.out.println("Красный");
-        if  (value>0&&value<=100)
+        }
+        else if  (value>0&&value<=100) {
             System.out.println("Желтый");
-        else
+        }
+        else {
             System.out.println("Зеленый");
+        }
     }
+
     public static void compareNumbers() {
         int a = 3;
         int b = -4;
-        if  (a>=b)
+        if  (a>=b) {
             System.out.println("a >= b");
-        else
+        }
+        else {
             System.out.println("a < b");
+        }
     }
+
     public static boolean sum(int a, int b) {
         return ((a + b) >= 10) && ((a + b) <= 20);
     }
+
     public static String checkNumString(int a)
     {
-         if (a>=0)
-            return ("Положительное");
-        else
-            return ("Отрицательное");
+         if (a>=0) {
+             return ("Положительное");
+         }
+        else {
+             return ("Отрицательное");
+         }
     }
+
     public static boolean checkNumBoolean(int a)
     {
         return  (a<=0);
     }
-    public static void countString(String s, int a) {
-        for(int i=0;i<a;i++)
-            System.out.println(s);
-    }
-    public static boolean yearVisocos (int year){
-        if ((year%4==0)&&(year%100!=0))
-            return true;
-        if ((year%4==0)&&(year%100==0))
-            return year % 400 == 0;
 
-        return false;
+    public static void countString(String s, int a) {
+        for(int i=0;i<a;i++) {
+            System.out.println(s);
+        }
     }
+
+    public static boolean yearVisocos (int year){
+        if ((year%4==0)&&(year%100!=0)) {
+            return true;
+        }
+        else{
+           return year % 400 == 0;
+       }
+    }
+
     public static int[] arrayInverse(int[] array){
         for (int i=0; i<array.length; i++)
         {
@@ -106,6 +125,7 @@ public class MainApp {
         }
         return array;
     }
+
     public static int[] array100(int[] array){
         for (int i=0; i<100; i++)
         {
@@ -113,13 +133,16 @@ public class MainApp {
         }
         return array;
     }
+
     public static int[] arrayTwelveMethod(int[] array){
         for (int i=0; i<array.length; i++)
-        {   if (array[i]<6)
-            array[i]=array[i]*2;
+        {   if (array[i]<6) {
+            array[i] = array[i] * 2;
+        }
         }
         return array;
     }
+
     public static int[][] arraySquareMethod(int[][] array){
         for (int i=0; i<array.length; i++)
             for (int j=0; j<array.length; j++)        {
@@ -130,6 +153,7 @@ public class MainApp {
         }
         return array;
     }
+
     public static int[] initialValueMethod(int len, int initialValue ){
         int[] array = new int[len];
         Arrays.fill(array, initialValue);
