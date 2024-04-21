@@ -1,13 +1,15 @@
 public class Cat extends Animal {
+    boolean satiety;
     String name;
     static int countCat = 0;
     static int food = 50;
 
 
-    Cat(String name) {
+    Cat(String name, boolean satiety) {
         super();
         countCat++;
         this.name = name;
+        this.satiety = satiety;
     }
 
     @Override
@@ -32,9 +34,10 @@ public class Cat extends Animal {
     public void eat() {
         if (food >= 20) {
             food -= 20;
-            System.out.println("Кот " + name + " поел, осталось еды: " + food);
+            satiety=true;
+            System.out.println("Кот " + name + " сыт("+satiety+"), осталось еды: " + food);
         } else {
-            System.out.println("Коту " + name + " не хватило еды");
+            System.out.println("Коту " + name + " не хватило еды, сытость: "+satiety);
         }
     }
 

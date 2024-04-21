@@ -4,9 +4,9 @@ public class AnimalsApp {
         System.out.println("Животных " + Animal.getCountAnimal());
 
         Cat[] cats = new Cat[3];
-        cats[0] = new Cat("Барсик");
-        cats[1] = new Cat("Мурзик");
-        cats[2] = new Cat("Жора");
+        cats[0] = new Cat("Барсик", false);
+        cats[1] = new Cat("Мурзик", false);
+        cats[2] = new Cat("Жора", false);
 
         Dog dog1 = new Dog("Тузик");
         Dog dog2 = new Dog("Тимка");
