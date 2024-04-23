@@ -1,3 +1,5 @@
+package Animals;
+
 public class Animal {
     static int countAnimal = 0;
 

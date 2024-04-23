@@ -1,3 +1,5 @@
+package Animals;
+
 public class AnimalsApp {
     public static void main(String[] args) {
         Animal animal = new Animal();
@@ -11,17 +13,18 @@ public class AnimalsApp {
         Dog dog1 = new Dog("Тузик");
         Dog dog2 = new Dog("Тимка");
 
-        System.out.println("Кошек " + Cat.getCountCat());
+        System.out.println("\nКошек " + Cat.getCountCat());
         cats[0].run(150);
         cats[1].run(300);
         cats[2].swim(1);
 
 
-        System.out.println("Собак " + Dog.getCountDog());
+        System.out.println("\nСобак " + Dog.getCountDog());
         dog1.run(50);
         dog2.run(600);
         dog1.swim(11);
         dog2.swim(2);
+        System.out.println();
 
         //коты едят
         for (Cat cat : cats) {

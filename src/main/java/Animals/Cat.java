@@ -1,3 +1,5 @@
+package Animals;
+
 public class Cat extends Animal {
     boolean satiety;
     String name;
