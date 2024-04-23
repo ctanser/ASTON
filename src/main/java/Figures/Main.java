@@ -71,14 +71,14 @@ public class Main {
 
         System.out.println("Периметр круга: " + circle.getPerimeter());
         System.out.println("Площадь круга: " + circle.getArea());
-        System.out.println(circle.getColor("Красный", "Черный\n"));
+        System.out.println(circle.getColor("Красный", "Черный")+"\n");
 
         System.out.println("Периметр прямоугольника: " + rectangle.getPerimeter());
         System.out.println("Площадь прямоугольника: " + rectangle.getArea());
-        System.out.println(rectangle.getColor("Красный", "Черный\n"));
+        System.out.println(rectangle.getColor("Красный", "Черный"+"\n"));
 
         System.out.println("Периметр треугольника: " + triangle.getPerimeter());
         System.out.println("Площадь треугольника: " + triangle.getArea());
-        System.out.println(triangle.getColor("Красный", "Черный\n"));
+        System.out.println(triangle.getColor("Красный", "Черный"));
     }
 }
