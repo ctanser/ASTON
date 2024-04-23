@@ -75,7 +75,7 @@ public class Main {
 
         System.out.println("Периметр прямоугольника: " + rectangle.getPerimeter());
         System.out.println("Площадь прямоугольника: " + rectangle.getArea());
-        System.out.println(rectangle.getColor("Красный", "Черный"+"\n"));
+        System.out.println(rectangle.getColor("Красный", "Черный")+"\n");
 
         System.out.println("Периметр треугольника: " + triangle.getPerimeter());
         System.out.println("Площадь треугольника: " + triangle.getArea());
