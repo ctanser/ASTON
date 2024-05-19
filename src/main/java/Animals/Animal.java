@@ -1,8 +1,9 @@
 package Animals;
 
 public class Animal {
-    static int countAnimal = 0;
-
+    public static int countAnimal = 0;
+    public boolean satiety;
+    public String name;
     public Animal() {
         countAnimal++;
     }
@@ -19,8 +20,11 @@ public class Animal {
         return countAnimal;
     }
 
-    void eat() {
 
+
+    public boolean eat(String name, boolean satiety){
+
+        return satiety;
     }
 
     void addEat(int foodAdd) {

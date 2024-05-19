@@ -1,11 +1,8 @@
 package Animals;
 
 public class Cat extends Animal {
-    boolean satiety;
-    String name;
-    static int countCat = 0;
-    static int food = 50;
 
+    static int countCat = 0;
 
     Cat(String name, boolean satiety) {
         super();
@@ -30,23 +27,6 @@ public class Cat extends Animal {
 
     static int getCountCat() {
         return countCat;
-    }
-
-    @Override
-    public void eat() {
-        if (food >= 20) {
-            food -= 20;
-            satiety=true;
-            System.out.println("Кот " + name + " сыт("+satiety+"), осталось еды: " + food);
-        } else {
-            System.out.println("Коту " + name + " не хватило еды, сытость: "+satiety);
-        }
-    }
-
-    @Override
-    public void addEat(int foodAdd) {
-        food += foodAdd;
-        System.out.println("Еды в миске " + food);
     }
 
 

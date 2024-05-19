@@ -26,13 +26,17 @@ public class AnimalsApp {
         dog2.swim(2);
         System.out.println();
 
+        Bowl bowl = new Bowl(50);
+
         //коты едят
         for (Cat cat : cats) {
-            cat.eat();
+          cat.satiety = bowl.eat(cat.name, cat.satiety);
+          System.out.println(cat.name + " сытость: " + cat.satiety);
         }
 
         //добавляем еды
-        cats[2].addEat(35);
-        cats[2].eat();
+        bowl.addEat(35);
+        cats[2].satiety = bowl.eat(cats[2].name, cats[2].satiety);
+        System.out.println(cats[2].name + " сытость: " + cats[2].satiety);
     }
 }
