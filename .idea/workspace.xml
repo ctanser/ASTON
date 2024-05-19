@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d841008d-83cd-4547-af34-8d78682ab8e2" name="Changes" comment="Lesson4Alfa">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Animals/Bowl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Figures/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Figures/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Figures/Triangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Animals/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Animals/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Animals/AnimalsApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Animals/AnimalsApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Animals/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Animals/Cat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Figures/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Figures/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="d841008d-83cd-4547-af34-8d78682ab8e2" name="Changes" comment="Lesson 4 добавил миску и вынес классы фигур" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,11 +122,28 @@
       <option name="project" value="LOCAL" />
       <updated>1715894106861</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Lesson 4 добавил миску и вынес классы фигур">
+      <option name="closed" value="true" />
+      <created>1716152522695</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716152522695</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Lesson 4 добавил миску и вынес классы фигур">
+      <option name="closed" value="true" />
+      <created>1716152676480</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716152676480</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Lesson4Alfa" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson4Alfa" />
+    <MESSAGE value="Lesson 4 добавил миску и вынес классы фигур" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 4 добавил миску и вынес классы фигур" />
   </component>
 </project>
