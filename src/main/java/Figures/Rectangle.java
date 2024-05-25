@@ -1,12 +1,16 @@
 package Figures;
 
 class Rectangle implements Figures {
-    private double length;
-    private double width;
+    private final double length;
+    private final double width;
+    private String fillColor;
+    private String borderColor;
 
-    public Rectangle(double length, double width) {
+    public Rectangle(double length, double width, String fillColor, String borderColor) {
         this.length = length;
         this.width = width;
+        this.fillColor = fillColor;
+        this.borderColor = borderColor;
     }
 
     @Override
@@ -17,5 +21,10 @@ class Rectangle implements Figures {
     @Override
     public double getArea() {
         return length * width;
+    }
+
+    @Override
+    public void getColor() {
+        System.out.println("Цвет заливки: " + fillColor + ", Цвет контура: " + borderColor);
     }
 }

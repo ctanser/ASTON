@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d841008d-83cd-4547-af34-8d78682ab8e2" name="Changes" comment="Lesson 4 добавил миску и вынес классы фигур" />
+    <list default="true" id="d841008d-83cd-4547-af34-8d78682ab8e2" name="Changes" comment="Lesson 4 добавил миску и вынес классы фигур">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Animals/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Animals/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Animals/AnimalsApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Animals/AnimalsApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Animals/Bowl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Animals/Bowl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Animals/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Animals/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Animals/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Animals/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Figures/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Figures/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Figures/Figures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Figures/Figures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Figures/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Figures/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Figures/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Figures/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Figures/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Figures/Triangle.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +33,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Lesson_4_Alfa" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,10 +46,18 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/ctanser/ASTON&quot;,
+    &quot;url&quot;: &quot;https://github.com/ctanser/ASTON.git&quot;,
     &quot;accountId&quot;: &quot;7ddb505e-9f4b-48db-a9b7-8ff6125cebc2&quot;
   }
 }</component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="11" />
+        <option name="workspaceImportForciblyTurnedOn" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -49,37 +70,37 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.Animals.AnimalsApp.executor": "Run",
     "Application.AnimalsApp.executor": "Run",
+    "Application.App.executor": "Run",
     "Application.Main.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.ASTON.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "Lesson__4",
+    "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/CTANSER/IdeaProjects/ASTON/src/main/java/Figures",
-    "settings.editor.selected.configurable": "copyright"
+    "last_opened_file_path": "C:/Users/CTANSER/IdeaProjects/ASTON",
+    "onboarding.tips.debug.path": "C:/Users/CTANSER/IdeaProjects/ASTON/untitled/src/main/java/Unknown1/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "build.tools"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\CTANSER\IdeaProjects\ASTON" />
+      <recent name="C:\Users\CTANSER\IdeaProjects\ASTON\Aston" />
       <recent name="C:\Users\CTANSER\IdeaProjects\ASTON\src\main\java\Figures" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="ASTON" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="ASTON" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\CTANSER\IdeaProjects\ASTON" />
+      <recent name="C:\Users\CTANSER\IdeaProjects\ASTON\Aston" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -138,12 +159,36 @@
       <option name="project" value="LOCAL" />
       <updated>1716152676480</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Lesson 4 добавил миску и вынес классы фигур">
+      <option name="closed" value="true" />
+      <created>1716152848012</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716152848012</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Lesson4Alfa" />
     <MESSAGE value="Lesson 4 добавил миску и вынес классы фигур" />
     <option name="LAST_COMMIT_MESSAGE" value="Lesson 4 добавил миску и вынес классы фигур" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/untitled/src/main/java/Unknown/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/untitled/src/main/java/Unknown1/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
