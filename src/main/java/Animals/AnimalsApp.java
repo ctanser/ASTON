@@ -30,7 +30,6 @@ public class AnimalsApp {
             cat.eat(cat, bowl, 22);
             System.out.println(cat.name + " сытость: " + cat.satiety);
         }
-
         //добавляем еды
         bowl.addEat(35);
         cats[2].eat(cats[2], bowl, 20);
