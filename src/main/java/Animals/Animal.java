@@ -9,11 +9,9 @@ public class Animal {
     }
 
     void run(int range) {
-
     }
 
     void swim(int range) {
-
     }
 
     static int getCountAnimal() {
