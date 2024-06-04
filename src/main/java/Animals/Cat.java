@@ -29,13 +29,13 @@ public class Cat extends Animal {
         return countCat;
     }
 
-    public void eat(Cat cat, Bowl bowl, int food) {
-        if (Bowl.food >= food) {
-            Bowl.food -= food;
-            cat.satiety = true;
-            System.out.println(cat.name + " поел, осталось еды: " + Bowl.food);
+    public void eat(Bowl bowl, int food) {
+        if (bowl.food >= food) {
+            bowl.food -= food;
+            satiety = true;
+            System.out.println(name + " поел, осталось еды: " + bowl.food);
         } else {
-            System.out.println(cat.name + " не хватило еды");
+            System.out.println(name + " не хватило еды");
         }
     }
 
