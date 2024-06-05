@@ -8,7 +8,11 @@ public class Words {
         // Находим список уникальных слов
         Map<String, Integer> wordCount = new HashMap<>();
         for (String word : words) {
-            wordCount.put(word, wordCount.getOrDefault(word, 0) + 1);
+            if (!wordCount.containsKey(word)) {
+                wordCount.put(word, 1);
+            } else {
+                wordCount.put(word, wordCount.get(word) + 1);
+            }
         }
 
         // Выводим список уникальных слов и количество повторений
