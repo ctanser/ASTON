@@ -38,6 +38,7 @@ public class Test_Mts {
         Assert.assertTrue(driver.findElement(By.xpath("//input[@class='phone']")).getAttribute("placeholder").equals("Номер телефона"));
         Assert.assertTrue(driver.findElement(By.xpath("//input[@class='total_rub']")).getAttribute("placeholder").equals("Сумма"));
         Assert.assertTrue(driver.findElement(By.xpath("//input[@class='email']")).getAttribute("placeholder").equals("E-mail для отправки чека"));
+
         //тест выпадающего меню
         String[] expectedTexts = {"Услуги связи", "Домашний интернет", "Рассрочка", "Задолженность"};
         List<WebElement> pElements = driver.findElements(By.xpath("//p[@class='select__option']"));
@@ -45,14 +46,13 @@ public class Test_Mts {
         for (int i = 0; i < pElements.size(); i++) {
             Assert.assertTrue(expectedTexts[i].equals(getInnerText(driver, pElements.get(i))));
         }
+
         // Проверка ссылки
         WebElement link = driver.findElement(By.linkText("Подробнее о сервисе"));
         String url = link.getAttribute("href");
         URL link1 = new URL(url);
-        HttpURLConnection httpConn =
-                (HttpURLConnection) link1.openConnection();
+        HttpURLConnection httpConn = (HttpURLConnection) link1.openConnection();
         httpConn.connect();
-
         int code = httpConn.getResponseCode();
         Assert.assertTrue(code <= 400);
 
@@ -73,7 +73,6 @@ public class Test_Mts {
         driver.findElement(By.id("connection-sum")).sendKeys(summ);
         driver.findElement(By.id("connection-email")).sendKeys("a@a.ru");
         driver.findElement(By.xpath("//button[text()='Продолжить']")).click();
-        // Нажимаем Enter для выполнения поиска
 
         // Ожидаем несколько секунд
         try {
@@ -106,7 +105,7 @@ public class Test_Mts {
         driver.quit();
     }
 
-
+    //метод для вытаскивания innerText
     public static String getInnerText(WebDriver driver, WebElement element) {
         JavascriptExecutor executor = (JavascriptExecutor) driver;
         return (String) executor.executeScript("return arguments[0].innerText", element);
