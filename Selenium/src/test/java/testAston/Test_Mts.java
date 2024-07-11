@@ -2,6 +2,7 @@ package testAston;
 
 import graphql.Assert;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -19,7 +20,7 @@ public class Test_Mts {
     private String summ = "300.00";
     private String phone = "297777777";
 
-    @org.junit.jupiter.api.Test
+    @Test
     @DisplayName("МТС")
     void test() throws IOException {
 
