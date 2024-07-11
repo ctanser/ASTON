@@ -15,7 +15,6 @@ public class Hooks {
 
     @After
     public void close_browser() throws Throwable {
-        System.out.println("This will run after the Scenario");
         landingPage = new LandingPage();
         landingPage.closeBrowser();
     }

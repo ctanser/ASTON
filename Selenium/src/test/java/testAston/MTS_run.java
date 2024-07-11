@@ -3,16 +3,12 @@ package testAston;
 import PageObject.IframePage;
 import PageObject.LandingPage;
 import PageObject.OnlinePage;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.After;
 import org.junit.Assert;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import static testAston.Driver.wait;
 
 public class MTS_run {
     LandingPage landingPage;
@@ -52,8 +48,12 @@ public class MTS_run {
     }
 
     @Then("Switch To Frame")
-    public void switch_to_frame() {
-        wait.until(ExpectedConditions.visibilityOf(landingPage.frame));
+    public void switch_to_frame()  {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         landingPage.switchToFrame(1);
     }
 
