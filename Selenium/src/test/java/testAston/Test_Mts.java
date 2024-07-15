@@ -34,7 +34,7 @@ public class Test_Mts {
         driver.findElement(By.id("cookie-agree")).click();
 
         //проверяем наличие элементов
-        Assert.assertTrue(driver.findElement(By.xpath("/html[@class='bx-core bx-win bx-no-touch bx-no-retina bx-chrome ya-page_js_yes websockets audio cssgradients contenteditable']/body/div[@class='layout layout--default']/main[@class='main']/div[@class='wrapper']/div[@class='homepage']/div[@id='pay-section']/div[@class='container-fluid']/div[@class='row']/div[@class='col-12 col-xl-8']/section[@class='pay']/div[@class='pay__wrapper']/h2")).getText().equals("Онлайн пополнение\nбез комиссии"));
+        Assert.assertTrue(driver.findElement(By.xpath("//div[@class='pay__wrapper']/h2")).getText().equals("Онлайн пополнение\nбез комиссии"));
         Assert.assertTrue(driver.findElement(By.xpath("//span[@class='select__now']")).getText().equals("Услуги связи"));
         Assert.assertTrue(driver.findElement(By.xpath("//input[@class='phone']")).getAttribute("placeholder").equals("Номер телефона"));
         Assert.assertTrue(driver.findElement(By.xpath("//input[@class='total_rub']")).getAttribute("placeholder").equals("Сумма"));
