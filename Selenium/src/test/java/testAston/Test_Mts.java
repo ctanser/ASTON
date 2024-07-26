@@ -58,16 +58,16 @@ public class Test_Mts {
         Assert.assertTrue(code <= 400);
 
         //картинки
-        WebElement visa_img = driver.findElement(By.xpath("//img[@alt='Visa']"));
-        Assert.assertTrue(visa_img.isDisplayed());
-        WebElement vbv_img = driver.findElement(By.xpath("//img[@alt='Verified By Visa']"));
-        Assert.assertTrue(vbv_img.isDisplayed());
-        WebElement masterCard_img = driver.findElement(By.xpath("//img[@alt='MasterCard']"));
-        Assert.assertTrue(masterCard_img.isDisplayed());
-        WebElement mcsc_img = driver.findElement(By.xpath("//img[@alt='MasterCard Secure Code']"));
-        Assert.assertTrue(mcsc_img.isDisplayed());
-        WebElement bel_img = driver.findElement(By.xpath("//img[@alt='Белкарт']"));
-        Assert.assertTrue(bel_img.isDisplayed());
+        WebElement visaImg = driver.findElement(By.xpath("//img[@alt='Visa']"));
+        Assert.assertTrue(visaImg.isDisplayed());
+        WebElement vbvImg = driver.findElement(By.xpath("//img[@alt='Verified By Visa']"));
+        Assert.assertTrue(vbvImg.isDisplayed());
+        WebElement masterCardImg = driver.findElement(By.xpath("//img[@alt='MasterCard']"));
+        Assert.assertTrue(masterCardImg.isDisplayed());
+        WebElement mcscImg = driver.findElement(By.xpath("//img[@alt='MasterCard Secure Code']"));
+        Assert.assertTrue(mcscImg.isDisplayed());
+        WebElement belImg = driver.findElement(By.xpath("//img[@alt='Белкарт']"));
+        Assert.assertTrue(belImg.isDisplayed());
 
         //заполнение данными
         driver.findElement(By.id("connection-phone")).sendKeys(phone);
@@ -93,14 +93,14 @@ public class Test_Mts {
         Assert.assertTrue(driver.findElement(By.xpath("//label[@class='ng-tns-c46-3 ng-star-inserted']")).getText().equals("Имя держателя (как на карте)"));
 
         //картинки в поле номер карты
-        WebElement masterCard_img_numbercard = driver.findElement(By.xpath("//img[@class='ng-tns-c61-0 ng-star-inserted'][1]"));
-        Assert.assertTrue(masterCard_img_numbercard.isDisplayed());
-        WebElement vbv_img_numbercard = driver.findElement(By.xpath("//img[@class='ng-tns-c61-0 ng-star-inserted'][2]"));
-        Assert.assertTrue(vbv_img_numbercard.isDisplayed());
-        WebElement visa_img_numbercard = driver.findElement(By.xpath("//img[@class='ng-tns-c61-0 ng-star-inserted'][3]"));
-        Assert.assertTrue(visa_img_numbercard.isDisplayed());
-        WebElement mir_img_numbercard = driver.findElement(By.xpath("//img[@class='ng-tns-c61-0 ng-trigger ng-trigger-randomCardState ng-star-inserted'][1]"));
-        Assert.assertTrue(mir_img_numbercard.isDisplayed());
+        WebElement masterCardImgNumbercard = driver.findElement(By.xpath("//img[@class='ng-tns-c61-0 ng-star-inserted'][1]"));
+        Assert.assertTrue(masterCardImgNumbercard.isDisplayed());
+        WebElement vbvImgNumbercard = driver.findElement(By.xpath("//img[@class='ng-tns-c61-0 ng-star-inserted'][2]"));
+        Assert.assertTrue(vbvImgNumbercard.isDisplayed());
+        WebElement visaImgNumbercard = driver.findElement(By.xpath("//img[@class='ng-tns-c61-0 ng-star-inserted'][3]"));
+        Assert.assertTrue(visaImgNumbercard.isDisplayed());
+        WebElement mirImgNumbercard = driver.findElement(By.xpath("//img[@class='ng-tns-c61-0 ng-trigger ng-trigger-randomCardState ng-star-inserted'][1]"));
+        Assert.assertTrue(mirImgNumbercard.isDisplayed());
 
         // Закрываем браузер
         driver.quit();
