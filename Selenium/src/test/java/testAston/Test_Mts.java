@@ -17,8 +17,8 @@ import java.util.List;
 
 public class Test_Mts {
 
-    private String summ = "300.00";
-    private String phone = "297777777";
+    private final String summ = "300.00";
+    private final String phone = "297777777";
 
     @Test
     @DisplayName("МТС")
