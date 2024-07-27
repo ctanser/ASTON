@@ -1,76 +1,43 @@
 package testAston;
 
-import PageObject.IframePage;
-import PageObject.LandingPage;
-import PageObject.OnlinePage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 import org.junit.Assert;
 
 
+import static com.codeborne.selenide.Selectors.*;
+import static com.codeborne.selenide.Selenide.*;
+
 public class MTS_run {
-    LandingPage landingPage;
-    OnlinePage onlinePage;
-    IframePage iframePage;
 
-    @Given("^Open site$")
-    public void open_site() throws Throwable {
-        landingPage = new LandingPage();
-        landingPage.openMTSUrl();
+    @Given("^open mts\\.by$")
+    public void openMtsBy()
+    {
+        open("http://mts.by");
+    }
+    @And("^press button with text \"([^\"]*)\"$")
+    public void press(String button)
+    {
+        $(byText(button)).click();
     }
 
-    @And("Agree cockle")
-    public void agree_cockle() {
-        landingPage.clickAgreeButton();
-    }
-
-    @And("^Enter phone \"([^\"]*)\"$")
-    public void enter_phone(String number) throws Throwable {
-        onlinePage = new OnlinePage();
-        onlinePage.enterPhone(number);
-    }
-
-    @And("^Enter summ \"([^\"]*)\"$")
-    public void enter_summ(String sum) throws Throwable {
-        onlinePage.enterSum(sum);
-    }
-
-    @And("^Enter email \"([^\"]*)\"$")
-    public void enter_email(String email) throws Throwable {
-        onlinePage.enterEmail(email);
-    }
-
-    @When("^Click button next$")
-    public void click_button_next() throws Throwable {
-        onlinePage.clickNextButton();
+    @And("^type to input with id \"([^\"]*)\" text: \"([^\"]*)\"$")
+    public void typeToInputWithNameText(String input, String text)
+    {
+       $(byId(input)).sendKeys(text);
     }
 
     @Then("Switch To Frame")
     public void switch_to_frame()  {
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        landingPage.switchToFrame(1);
+        sleep(3000);
+        switchTo().frame(1);
     }
 
-    @And("Check number {string}")
-    public void check_number(String number) {
-        iframePage = new IframePage();
-        Assert.assertEquals(iframePage.numberIframe.getText(), "Оплата: Услуги связи Номер:375" + number);
-    }
-
-    @And("Check amount text {string}")
-    public void check_amount_text(String sum) {
-        Assert.assertEquals(iframePage.sumTextIframe.getText(), sum + " BYN");
-    }
-
-    @And("Check amount button {string}")
-    public void check_amount_button(String sum) {
-        Assert.assertEquals(iframePage.payButtonIframe.getText(), "Оплатить " + sum + " BYN");
+    @And("^check with xpath \"([^\"]*)\" text: \"([^\"]*)\"$")
+    public void checkText(String xpath, String text)
+    {
+        Assert.assertEquals($(byXpath(xpath)).getText(), text);
     }
 
 }

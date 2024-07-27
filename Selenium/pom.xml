@@ -32,7 +32,7 @@
     <maven-javadoc-plugin.version>3.7.0</maven-javadoc-plugin.version>
 
     <!-- Java version -->
-    <java.version>11</java.version>
+    <java.version>21</java.version>
     <maven.compiler.target>${java.version}</maven.compiler.target>
     <maven.compiler.source>${java.version}</maven.compiler.source>
 
@@ -79,6 +79,21 @@
       <groupId>io.cucumber</groupId>
       <artifactId>cucumber-junit</artifactId>
       <version>7.18.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.codeborne</groupId>
+      <artifactId>selenide</artifactId>
+      <version>7.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>info.cukes</groupId>
+      <artifactId>cucumber-java8</artifactId>
+      <version>1.2.3</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.1</version>
     </dependency>
   </dependencies>
 </project>

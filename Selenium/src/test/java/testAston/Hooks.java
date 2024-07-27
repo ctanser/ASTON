@@ -1,13 +1,14 @@
 package testAston;
 
 
-import PageObject.LandingPage;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import io.cucumber.java.After;
 
+import static testAston.Driver.driver;
+
 public class Hooks {
-    LandingPage landingPage;
+
     @Before
     public void prepareData() {
         //подготовить данные
@@ -15,8 +16,7 @@ public class Hooks {
 
     @After
     public void close_browser() throws Throwable {
-        landingPage = new LandingPage();
-        landingPage.closeBrowser();
+        driver.quit();
     }
 
     @After
