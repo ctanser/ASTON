@@ -28,18 +28,26 @@ public class MTS_run {
        $(byId(input)).sendKeys(text);
     }
 
-    @Then("Switch To Frame")
-    public void switch_to_frame()  {
+    @Then("Switch To Frame {int}")
+    public void switch_to_frame(int frame)  {
         sleep(3000);
-        switchTo().frame(1);
+        switchTo().frame(frame);
     }
 
-    @And("^check with xpath \"([^\"]*)\" text: \"([^\"]*)\"$")
-    public void checkText(String xpath, String text)
+    @And("^check with xpath \"([^\"]*)\" text: \"([^\"]*)\"$\"([^\"]*)\"$")
+    public void checkText(String xpath, String text, String text2)
     {
         Assert.assertEquals($(byXpath(xpath)).getText(), text);
     }
 
+    @And("check with xpath {string} text: {string}{string}")
+    public void checkWithXpathText(String xpath, String text, String text2) {
+        Assert.assertEquals($(byXpath(xpath)).getText(), text+text2);
+    }
+
+    @And("check with xpath {string} text: {string}{string}{string}")
+    public void checkWithXpathTextSum(String xpath, String text, String text2, String text3) {
+    }
 }
 
 
