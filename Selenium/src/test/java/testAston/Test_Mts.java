@@ -17,8 +17,8 @@ import java.util.List;
 
 public class Test_Mts {
 
-    private final String summ = "300.00";
-    private final String phone = "297777777";
+    private final String SUMM = "300.00";
+    private final String PHONE = "297777777";
 
     @Test
     @DisplayName("МТС")
@@ -70,8 +70,8 @@ public class Test_Mts {
         Assert.assertTrue(belImg.isDisplayed());
 
         //заполнение данными
-        driver.findElement(By.id("connection-phone")).sendKeys(phone);
-        driver.findElement(By.id("connection-sum")).sendKeys(summ);
+        driver.findElement(By.id("connection-phone")).sendKeys(PHONE);
+        driver.findElement(By.id("connection-sum")).sendKeys(SUMM);
         driver.findElement(By.id("connection-email")).sendKeys("a@a.ru");
         driver.findElement(By.xpath("//button[text()='Продолжить']")).click();
 
@@ -84,9 +84,9 @@ public class Test_Mts {
 
         //фрейм
         driver.switchTo().frame(1);
-        Assert.assertTrue(driver.findElement(By.xpath("//div[@class='pay-description__cost']/span")).getText().equals(summ + " BYN"));
-        Assert.assertTrue(driver.findElement(By.xpath("//div[@class='card-page__card']/button")).getText().equals("Оплатить " + summ + " BYN"));
-        Assert.assertTrue(driver.findElement(By.xpath("//div[@class='pay-description__text']/span")).getText().equals("Оплата: Услуги связи Номер:375" + phone));
+        Assert.assertTrue(driver.findElement(By.xpath("//div[@class='pay-description__cost']/span")).getText().equals(SUMM + " BYN"));
+        Assert.assertTrue(driver.findElement(By.xpath("//div[@class='card-page__card']/button")).getText().equals("Оплатить " + SUMM + " BYN"));
+        Assert.assertTrue(driver.findElement(By.xpath("//div[@class='pay-description__text']/span")).getText().equals("Оплата: Услуги связи Номер:375" + PHONE));
         Assert.assertTrue(driver.findElement(By.xpath("//label[@class='ng-tns-c46-1 ng-star-inserted']")).getText().equals("Номер карты"));
         Assert.assertTrue(driver.findElement(By.xpath("//label[@class='ng-tns-c46-4 ng-star-inserted']")).getText().equals("Срок действия"));
         Assert.assertTrue(driver.findElement(By.xpath("//label[@class='ng-tns-c46-5 ng-star-inserted']")).getText().equals("CVC"));
